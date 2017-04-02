@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anoop Kanyan</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/a3c0a16723.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header id ="main_navigation" class="clearfix">
+  <%= link_to "Anoop Kanyan ", root_path, class:"name" %>
+  <nav>
+    <%= link_to "Articles", posts_path %>
+    <a href="#">Projects</a>
+	<a href="#">Contact</a>
+  </nav>
+</header>
+
+<%= yield %>
+
+<footer id="main_footer">
+			<p class="copyright">&copy; 2016 Anoop Kanyan </p>
+			<nav>
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</nav>
+		</footer>
+
+</body>
+</html>
