@@ -69,6 +69,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    mail_form (1.6.0)
+      actionmailer (>= 3.2, < 5.1)
+      activemodel (>= 3.2, < 5.1)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -158,6 +161,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  mail_form
   pg
   pygments.rb (~> 0.6.3)
   rails (= 4.2.6)
