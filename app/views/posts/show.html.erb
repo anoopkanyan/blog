@@ -16,8 +16,14 @@
 			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-			
 		</div>
+
+		<% if user_signed_in? %>
+		  	<div id="admin_links">
+		  		<%= link_to "Edit Article", edit_post_path(@post)%>
+		  		<%= link_to "Delete Artcile", post_path(@post), method: :delete, data: { confirm: "Are you sure?"} %>
+		  	</div>
+		<% end %>
 
 		<hr>
 		<%= render 'disqus' %>
