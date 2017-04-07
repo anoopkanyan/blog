@@ -9,11 +9,13 @@
   <%= csrf_meta_tags %>
   <%= render :partial => 'layouts/google_analytics' %>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<header id ="main_navigation" class="clearfix">
+<header id ="top_header" class="clearfix">
   <%= link_to "Anoop Kanyan ", root_path, class:"name" %>
-  <nav>
+  <a href="#" class="menu"><i class="fa fa-bars"></i></a>
+  <nav id="main_nav">
     <%= link_to "Articles", posts_path %>
     <%= link_to "Projects", projects_path %>
   	<%= link_to "Contact", new_contact_path %>
