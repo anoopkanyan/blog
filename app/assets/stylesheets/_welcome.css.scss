@@ -60,3 +60,14 @@ $border: #E9E9E9;
 			text-decoration: none;
 		}
 	}
+
+
+@media only screen and (max-width: 768px) {
+
+.col-1, .col-2, .col-3 {
+	width: 100%;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+	
+} 

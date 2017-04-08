@@ -240,27 +240,12 @@ input[type="submit"], .button {
 	}
 
 
-    #main_footer {
-    	padding: 2.5em 5%;
-		border-top: 1px solid $border;
+    body {
+    	margin: 0 0 0 0;
+    }
 
-		.copyright {
-			float: left;
-			font-size: .6em;
-			margin: 0; 
-		}
+    hr{
+    	margin: 3em auto;
+    }
 
-		nav {
-			float:right;
-			i {
-				font-size: .6em;
-				color: $dark;
-				margin-left: 1em;
-				padding-top: .2em;
-				&:hover {
-					color: $highlight;		
-				}
-			}
-		}
-	}
 } 
