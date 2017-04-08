@@ -207,7 +207,7 @@ input[type="submit"], .button {
 
 @media only screen and (max-width: 768px) {
 
-	nav {
+	#main_nav {
 		display: none;
 	}
 
@@ -216,6 +216,8 @@ input[type="submit"], .button {
 		width: 100%;
 		a {
 			display: block;
+			color: $dark;
+			font-size: 1rem;
 			padding: 1em 0;
 			border-bottom: 1px solid $dark;
 			&:last-child {
@@ -230,9 +232,35 @@ input[type="submit"], .button {
 		padding-top: 1rem;
 
 	}
+
 	i:before {
 		font-size: 1.5em;
 		color: $dark;
 
+	}
+
+
+    #main_footer {
+    	padding: 2.5em 5%;
+		border-top: 1px solid $border;
+
+		.copyright {
+			float: left;
+			font-size: .6em;
+			margin: 0; 
+		}
+
+		nav {
+			float:right;
+			i {
+				font-size: .6em;
+				color: $dark;
+				margin-left: 1em;
+				padding-top: .2em;
+				&:hover {
+					color: $highlight;		
+				}
+			}
+		}
 	}
 } 
