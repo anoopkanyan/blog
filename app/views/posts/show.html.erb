@@ -9,6 +9,13 @@
 		
 		<%= markdown @post.content %>
 
+		<p>
+  			Tags:
+  			<% @post.tags.each do |tag| %>
+    		<%= tag.name %>
+  			<% end %>
+		</p>
+
 		</div>
 		<hr>
 		<div id="share_box">
