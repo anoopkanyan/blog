@@ -9,10 +9,10 @@
 		
 		<%= markdown @post.content %>
 
-		<p>
-  			Tags:
+		<p class="tags">
+  			TAGS:
   			<% @post.tags.each do |tag| %>
-    		<%= tag.name %>
+    			<%= link_to '#'.concat(tag.name), tag_path(tag) %> 
   			<% end %>
 		</p>
 
