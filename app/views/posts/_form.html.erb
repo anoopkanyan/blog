@@ -29,8 +29,20 @@
 <br>
 <br>
 
-<%= f.label :image, "Attach Thumbnail" %><br>
-<%= f.file_field :image %>
+
+  <% if @post.image.exists? %>
+      <%= image_tag @post.image.url %>
+      <br>
+      <br>
+      <%= f.label :image, "Change the Thumbnail" %>
+      <br>
+      <%= f.file_field :image %>
+  <% else %>
+  	  <%= f.label :image, "Add a Thumbnail" %>
+      <br>
+      <%= f.file_field :image %>
+  <% end %>
+  
 
 <br>
 <br>
