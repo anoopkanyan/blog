@@ -1,3 +1,8 @@
+<% set_meta_tags title: @post.title,
+                 description: @post.title,
+                 keywords: @post.tag_list.concat(',').concat(@post.title.parameterize(',')) , 
+                 reverse: true %>
+
 
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
 			<header>
