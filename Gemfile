@@ -37,6 +37,8 @@ gem 'devise'
 
 gem "paperclip"
 
+gem 'meta-tags'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
