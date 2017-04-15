@@ -2,7 +2,7 @@
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';
-
+@import "social-share-button";
 
 $dark: #424652;
 $light: #9a9da4;
@@ -257,4 +257,14 @@ input[type="submit"], .button {
     	margin: 3em auto;
     }
 
-} 
+}
+
+.social-share-button {
+  .ssb-icon {
+    background-size:  1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 1em 1.5em;
+
+  }
+}
