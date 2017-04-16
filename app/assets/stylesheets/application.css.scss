@@ -36,7 +36,7 @@ hr {
 }
 
 .wrapper {
-	width: 90%;
+	width: 90%; 
 	margin: 0 auto;
 }
 
@@ -121,6 +121,7 @@ p, ul, ol {
 #top_header{
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $border;
+	
 	.name{
 		font-weight: 700;
 		font-size: .8em;
