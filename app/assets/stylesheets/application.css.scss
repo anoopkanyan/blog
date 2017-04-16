@@ -4,6 +4,7 @@
 @import 'pygments';
 @import "social-share-button";
 
+
 $dark: #424652;
 $light: #9a9da4;
 $highlight: #8bc6db;
@@ -12,6 +13,8 @@ $white: #FFFFFF;
 
 * {
 	box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
