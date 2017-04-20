@@ -32,7 +32,10 @@
 		<hr>
 		<div id="share_box">
 			<p>Share <%= @post.title %> </p>
-			<%= social_share_button_tag(@post.title) %>
+			<!--<%= social_share_button_tag(@post.title) %> -->
+
+			<%= social_share_button_tag(@post.title, :url => request.original_url, :image => ActionController::Base.helpers.asset_path(@post.image), desc: "The summary of page") %>
+
 			
 			<!--
 			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
