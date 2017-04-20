@@ -2,7 +2,28 @@
                  description: @post.title,
                  keywords: @post.tag_list.concat(',').concat(@post.title.parameterize(',')) , 
                  reverse: true,
-                 image_src: 'https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'   %>
+                 og: {
+  					title:    @post.title,
+  					type:     'website',
+  					url:      request.original_url,
+  					image:    [{
+    					_: 'https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',
+    					width: 75,
+    					height: 75,
+  						},
+  						{
+    					_: 'https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',
+    					width: 50,
+    					height: 50,
+  						}]
+					}	   %>
+
+
+
+
+
+
+
 
 
 
