@@ -7,12 +7,12 @@
   					type:     'website',
   					url:      request.original_url,
   					image:    [{
-    					_: @post.image.url,
+    					_: root_url + @post.image.url,
     					width: 75,
     					height: 75,
   						},
   						{
-    					_: @post.image.url,
+    					_: root_url + @post.image.url,
     					width: 50,
     					height: 50,
   						}]
