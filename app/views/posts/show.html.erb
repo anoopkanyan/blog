@@ -1,3 +1,23 @@
+<% set_meta_tags title: @post.title,
+                 description: @post.title,
+                 keywords: @post.tag_list.concat(',').concat(@post.title.parameterize(',')) , 
+                 reverse: true,
+                  og: {
+  title:    'Two structured image properties',
+  type:     'website',
+  url:      'view-source:http://examples.opengraphprotocol.us/image-array.html',
+  image:    [{
+    _: 'http://examples.opengraphprotocol.us/media/images/75.png',
+    width: 75,
+    height: 75,
+  },
+  {
+    _: 'http://examples.opengraphprotocol.us/media/images/50.png',
+    width: 50,
+    height: 50,
+  }]
+} %>
+
 
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
 			<header>
@@ -7,11 +27,11 @@
 		    </header>
 		<div id="content">
 
-		
+		<!-- This is the thumbnail image, 
+		not to be displayed here
 		
 		<p><%= image_tag @post.image.url %></p>
-
-		
+		-->
 		
 		<%= markdown @post.content %>
 
@@ -26,7 +46,8 @@
 		<hr>
 		<div id="share_box">
 			<p>Share <%= @post.title %> </p>
-			<%= social_share_button_tag(@post.title) %>	
+			<%= social_share_button_tag(@post.title) %>
+			
 			<!--
 			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -44,4 +65,3 @@
 		<hr>
 		<%= render 'disqus' %>
 		</div>
-

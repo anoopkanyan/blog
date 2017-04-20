@@ -11,11 +11,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" >
   <meta name="theme-color" content="#8bc6db" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content="When Great Minds Don’t Think Alike" />
-<meta property="og:description"        content="How much does culture influence creative thinking?" />
-<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
 </head>
 <body>
 <header id ="top_header" class="clearfix">
@@ -24,7 +19,7 @@
   <nav id="main_nav">
     <%= link_to "Articles", posts_path %>
     <%= link_to "Projects", projects_path %>
-  	<%= link_to "Contact", new_contact_path %>
+    <%= link_to "Contact", new_contact_path %>
     <% if user_signed_in? %>
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %> 
     <% end %>
@@ -39,17 +34,14 @@
 <%= yield %>
 
 <footer id="main_footer">
-			<p class="copyright">&copy; 2017 ChewTab </p>
-			<nav>
-				<a href="https://www.facebook.com/chewtab/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-				<a href="https://twitter.com/chewtab"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			<!--	<a href=""><i class="fa fa-github" aria-hidden="true"></i></a> -->
-				<a href="https://www.instagram.com/chewtab/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-			</nav>
-		</footer>
+      <p class="copyright">&copy; 2017 ChewTab </p>
+      <nav>
+        <a href="https://www.facebook.com/chewtab/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/chewtab"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <!--  <a href=""><i class="fa fa-github" aria-hidden="true"></i></a> -->
+        <a href="https://www.instagram.com/chewtab/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </nav>
+    </footer>
 
 </body>
 </html>
-
-
-
