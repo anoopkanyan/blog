@@ -8,11 +8,12 @@
   					url:      		request.original_url,
   					image:    		root_url + @post.image.url,
   					description: 	@post.content,
-  					site_name:      "Chewtab" ,
-  					article: {
-  						published_time:  @post.created_at.strftime('%A, %B %d') 
-  					}
-				} %>
+  					site_name:      "Chewtab" 	
+				},
+				
+				 article: {
+  						published_time:  @post.created_at 
+  					} %>
 
 			
 
