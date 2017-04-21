@@ -1,13 +1,20 @@
 <% set_meta_tags title: @post.title,
-                 description: @post.title,
+                 description: @post.content,
                  keywords: @post.tag_list.concat(',').concat(@post.title.parameterize(',')) , 
                  reverse: true,
                   og: {
-  					title:    @post.title,
-  					type:     'website',
-  					url:      request.original_url,
-  					image:    root_url + @post.image.url
+  					title:    		@post.title,
+  					type:     		'article',
+  					url:      		request.original_url,
+  					image:    		root_url + @post.image.url,
+  					description: 	@post.content,
+  					site_name:      "Chewtab" ,
+  					article: {
+  						published_time:  @post.created_at.strftime('%A, %B %d') 
+  					}
 				} %>
+
+			
 
 
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
