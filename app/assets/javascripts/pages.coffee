@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-    $('#pins').masonry
-      itemSelector: '.box'
+    $('#grid').masonry
+      itemSelector: '.col-2'
       isFitWidth: true
