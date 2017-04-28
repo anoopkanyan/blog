@@ -45,6 +45,9 @@ gem 'bootstrap-sass', '~> 3.2.0'
 
 gem 'autoprefixer-rails'
 
+#gem for masonary
+gem 'jquery-masonry-rails'
+
 gem 'rails_12factor', group: :production
 gem 'aws-sdk', '< 2.0'
 
