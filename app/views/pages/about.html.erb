@@ -1,7 +1,9 @@
-<div id="main_grid" class="clearfix">
+<div id="main_grid"  class="col-1 homepage_content">
+<h2>Stuff We've Written</h2> 
+<hr>
 <% @posts.each do |post| %>
   <div class="grid-item">
-    <%= link_to (image_tag post.image.url(:square)), post %>
+    <%= link_to (image_tag post.image.url(:main)), post %>
     <h3>
       <%= link_to post.title, post %>
     </h3>
@@ -12,9 +14,26 @@
  <% end %> 
 </div>
 
+<div class="col-2 homepage_content">
+  <h2>Stuff We've Written</h2>  
+  <hr>
+  <% @posts.each do |post| %>
+  <iframe width="100%" height="100%"
+  src="https://www.youtube.com/embed/XGSy3_Czz8k">
+  </iframe>
+  <h3><a href="#"><%= link_to post.title, post %></a></h3>
+  <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>  
+  <% end %>
+</div>
 
-
-  
+<div class="col-3 homepage_content" >
+  <h2>Stuff We've Built</h2>  
+  <hr>
+  <% @posts.each do |project| %>
+  <h3><a href="#"><%= link_to project.title, project %></a></h3>
+  <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p> 
+  <% end %>
+</div>
 
 
 

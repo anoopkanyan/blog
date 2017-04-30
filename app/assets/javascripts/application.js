@@ -31,5 +31,6 @@ $(document).ready(function() {
 // jQuery
 $('#main_grid').masonry({
   itemSelector: '.grid-item',
-  fitWidth: true
+  fitWidth: true,
+  
 });

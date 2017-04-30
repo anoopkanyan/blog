@@ -278,16 +278,16 @@ input[type="submit"], .button {
 
 
 #main_grid {
-
+	max-width: 30em;
+	width: 30em;
 	list-style: none;
-	margin: 30px auto;
-	padding: 0;
+	float: left;
 }
 
 
 /* fluid 5 columns */
 .grid-sizer,
-.grid-item { width: 33%;
+.grid-item { width: 40%;
  }
 /* 2 columns wide */
 .grid-item--width2 { width: 40%; }
@@ -296,16 +296,17 @@ input[type="submit"], .button {
 .grid-item {
 	display: block;
 	float: left;
-	padding: 7px;
-	width: 33%;
-   
-	
+	width: 100%;
+	text-align: center;
+   	
 	img {
 	  max-width: 100%;
 	  height: auto;
+	  width: 100%;
+	  display: block;
 	 }
 	h3 {
-		text-align: left;
+	  text-align: left;
 	  font-size: 1.35em;
       font-weight: 400;
       margin-bottom: .5em;
@@ -313,6 +314,7 @@ input[type="submit"], .button {
 				text-decoration: none;
 				line-height: 1.5;
 				color: $dark;
+				
 	  	}
 	  }
 	  .date {
@@ -337,3 +339,5 @@ input[type="submit"], .button {
 		width: 100%;
 	}
 }
+
+
