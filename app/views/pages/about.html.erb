@@ -1,15 +1,23 @@
 <div id="main_grid" class="clearfix">
-<div class="grid-sizer"></div>
-  <div class="grid-item">This is trying the mas</div>
-   <div class="grid-item">This is trying the mas</div>
-    <div class="grid-item">This is trying the mas</div>
-     <div class="grid-item">This is trying the mas</div>
-      <div class="grid-item">This is trying the mas</div>
-       <div class="grid-item">This is trying the mas</div>
-        <div class="grid-item">This is trying the mas</div>
-         <div class="grid-item">This is trying the mas</div>
-          <div class="grid-item">This is trying the mas</div>
-           <div class="grid-item">This is trying the mas</div>
-            <div class="grid-item">This is trying the mas</div>
-  
+<% @posts.each do |post| %>
+  <div class="grid-item">
+    <%= link_to (image_tag post.image.url(:square)), post %>
+    <h3>
+      <%= link_to post.title, post %>
+    </h3>
+    <p class="date">
+    <%= post.created_at.strftime('%A, %B %d') %>
+    </p>
+  </div>
+ <% end %> 
 </div>
+
+
+
+  
+
+
+
+
+
+

@@ -27,3 +27,9 @@ $(document).ready(function() {
 		$('#main_nav').toggleClass('active');
 	});
 }); 
+
+// jQuery
+$('#main_grid').masonry({
+  itemSelector: '.grid-item',
+  fitWidth: true
+});

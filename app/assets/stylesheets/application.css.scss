@@ -278,7 +278,7 @@ input[type="submit"], .button {
 
 
 #main_grid {
-	max-width: 69em;
+
 	list-style: none;
 	margin: 30px auto;
 	padding: 0;
@@ -287,7 +287,8 @@ input[type="submit"], .button {
 
 /* fluid 5 columns */
 .grid-sizer,
-.grid-item { width: 20%; }
+.grid-item { width: 33%;
+ }
 /* 2 columns wide */
 .grid-item--width2 { width: 40%; }
 
@@ -296,4 +297,43 @@ input[type="submit"], .button {
 	display: block;
 	float: left;
 	padding: 7px;
+	width: 33%;
+   
+	
+	img {
+	  max-width: 100%;
+	  height: auto;
+	 }
+	h3 {
+		text-align: left;
+	  font-size: 1.35em;
+      font-weight: 400;
+      margin-bottom: .5em;
+	  	a {
+				text-decoration: none;
+				line-height: 1.5;
+				color: $dark;
+	  	}
+	  }
+	  .date {
+	  		text-align: right;
+	  	    font-size: .85em;
+    		margin-bottom: 2em;
+   		    color: $light;
+	  }
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+	.grid-item, .grid-sizer {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid-item, .grid-sizer {
+		width: 100%;
+	}
 }
