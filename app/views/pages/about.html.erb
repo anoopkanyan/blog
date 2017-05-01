@@ -1,5 +1,5 @@
 <div id="main_grid"  class="col-1 homepage_content">
-<h2>Stuff We've Written</h2> 
+<h2>Trending</h2> 
 <hr>
 <% @posts.each do |post| %>
   <div class="grid-item">
@@ -15,7 +15,7 @@
 </div>
 
 <div class="col-2 homepage_content">
-  <h2>Stuff We've Written</h2>  
+  <h2>Trending Videos</h2>  
   <hr>
   <% @posts.each do |post| %>
   <iframe width="100%" height="100%"
@@ -27,7 +27,7 @@
 </div>
 
 <div class="col-3 homepage_content" >
-  <h2>Stuff We've Built</h2>  
+  <h2>Latest</h2>  
   <hr>
   <% @posts.each do |project| %>
   <h3><a href="#"><%= link_to project.title, project %></a></h3>
