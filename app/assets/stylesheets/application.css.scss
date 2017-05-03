@@ -223,23 +223,44 @@ input[type="submit"], .button {
 
 @media only screen and (max-width: 768px) {
 
+
+	.name.active {
+		display: none;
+	}
+
+
+
 	#main_nav {
 		display: none;
 	}
 
-	#main_nav.active {
+	#main_nav.active {	
 		display: block;
+		text-align: center;
+
 		width: 100%;
 		a {
 			display: block;
-			color: $dark;
+			color: $white;
 			font-size: 1rem;
 			padding: 1em 0;
-			border-bottom: 1px solid $dark;
+			border-bottom: 1px solid $light;
 			&:last-child {
 				border-bottom: none;
 			};
+
 		}
+
+		#social_icons_nav{
+			float: inherit;
+			a {
+				display: inline-block;
+				border-bottom: none;
+				font-size: 1rem;
+			}
+
+			}
+			
 	} 
 
 	.menu {
@@ -251,7 +272,7 @@ input[type="submit"], .button {
 
 	i:before {
 		font-size: 1.5em;
-		color: $dark;
+		color: $white;
 
 	}
 
