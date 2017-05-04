@@ -40,7 +40,7 @@
     			<%= link_to '#'.concat(tag.name), tag_path(tag) %> 
   			<% end %>
 		</p>
-
+		<%= "#{@post.impressionist_count} views" %>
 		</div>
 		<hr>
 		<div id="share_box">
@@ -61,8 +61,7 @@
 		  	</div>
 		<% end %>
 
-		<%= "#{@post.impressionist_count} views so far!" %>
-
+		
 		<hr>
 		<%= render 'disqus' %>
 		</div>
