@@ -1,5 +1,5 @@
 <div id="main_grid"  class="col-1 homepage_content">
-<h2>Trending</h2> 
+<h2>Latest Stories</h2> 
 <hr>
 <% @posts.each do |post| %>
   <div class="grid-item">
@@ -27,14 +27,13 @@
 </div>
 
 <div class="col-3 homepage_content" >
-  <h2>Latest</h2>  
+  <h2>Trending</h2>  
   <hr>
-  <% @posts.each do |project| %>
-  <h3><a href="#"><%= link_to project.title, project %></a></h3>
-  <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p> 
+  <% @trending.each do |trending| %>
+  <h3><a href="#"><%= link_to trending.title, trending %></a></h3>
+  <p class="date"><%= trending.created_at.strftime("%A, %b %d") %></p> 
   <% end %>
 </div>
-
 
 
 
