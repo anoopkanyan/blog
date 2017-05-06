@@ -362,12 +362,16 @@ input[type="submit"], .button {
 @media screen and (max-width: 900px) {
 	.grid-item, .grid-sizer {
 		width: 50%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	.grid-item, .grid-sizer {
 		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 

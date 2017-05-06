@@ -66,8 +66,13 @@ $border: #E9E9E9;
 
 .col-1, .col-2, .col-3 {
 	width: 100%;
-	padding: 0 0 0 0;
 	text-align: center;
 }
+
+.col-2, .col-3{
+	padding-left: 10%;
+	padding-right: 10%; 
+}
+
 	
 } 
