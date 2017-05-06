@@ -18,9 +18,9 @@
   <h2>Trending Videos</h2>  
   <hr>
   <% @posts.each do |post| %>
-  <iframe width="100%" height="100%"
-  src="https://www.youtube.com/embed/XGSy3_Czz8k">
-  </iframe>
+  <% if !(post.youtube_url.nil?) %>
+  <p><%= raw(youtube_embed_main(post.youtube_url)) %></p>
+  <% end %>
   <h3><a href="#"><%= link_to post.title, post %></a></h3>
   <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>  
   <% end %>
@@ -34,8 +34,6 @@
   <p class="date"><%= trending.created_at.strftime("%A, %b %d") %></p> 
   <% end %>
 </div>
-
-
 
 
 

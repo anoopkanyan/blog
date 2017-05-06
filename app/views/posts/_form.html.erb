@@ -29,6 +29,15 @@
 <br>
 <br>
 
+<br>
+<br>
+
+<%= f.label :youtube_url %><br>
+<%= f.text_field :youtube_url %>
+
+<br>
+<br>
+
 
   <% if @post.image.exists? %>
       <%= image_tag @post.image.url %>
