@@ -34,7 +34,7 @@
 		-->
 		
 		<%= markdown @post.content %>
-		<% if !(@post.youtube_url.nil?) %>
+		<% if !(@post.youtube_url.blank?) %>
 		<p><%= raw(youtube_embed_post(@post.youtube_url)) %></p>
 		<% end %>
 		<p class="tags">
