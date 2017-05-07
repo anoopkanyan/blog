@@ -9,7 +9,8 @@ class Post < ActiveRecord::Base
   has_attached_file :image, styles: {
     thumb: '100x100>',
     square: '200x200#',
-    main: '300x200>'
+    main: '300x200',
+    facebook: '500x400'>
   }
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 

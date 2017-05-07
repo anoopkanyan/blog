@@ -11,7 +11,7 @@
 <% @posts.each do |post| %>
 <% if (post.youtube_url.blank?) %>
   <div class="grid-item">
-    <%= link_to (image_tag post.image.url(:main)), post %>
+    <%= link_to (image_tag post.image.url(:facebook)), post %>
     <h3>
       <%= link_to post.title, post %>
     </h3>
