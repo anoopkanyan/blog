@@ -6,7 +6,7 @@
   					title:    		@post.title,
   					type:     		'article',
   					url:      		request.original_url,
-  					image:    		root_url + @post.image.url,
+  					image:    		root_url + @post.image.url(:main),
   					description: 	@post.content,
   					site_name:      "Chewtab" 	
 				},
