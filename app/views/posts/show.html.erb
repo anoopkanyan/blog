@@ -24,15 +24,16 @@
 			<h1><%= @post.title %></h1>
 			<hr>
 		    </header>
-		   
-		<div id="content">
- <script data-cfasync='false' type='text/javascript' src='//p218084.clksite.com/adServe/banners?tid=218084_408545_0&type=slider&size=120x600'></script>
 
+
+		<div id="content">
 		<!-- This is the thumbnail image, 
 		not to be displayed here
 		
 		<p><%= image_tag @post.image.url %></p>
 		-->
+
+		
 		
 		<%= markdown @post.content %>
 		<% if !(@post.youtube_url.blank?) %>
