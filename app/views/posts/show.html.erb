@@ -13,7 +13,17 @@
 				
 				 article: {
   						published_time:  @post.created_at 
-  					} %>
+  					},
+
+  				 twitter: {
+ 					 card:  "photo",
+  					 image: {
+    				 	_:      @post.image.url(:main),
+    				 	width:  300,
+    					height: 200,
+  						}
+					}				
+  				 	 %>
 
 			
 
