@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
  
   is_impressionable
   has_many :taggings
-  has_many :tags, through: :taggings
+  has_many :tags, through: :taggings, dependent: :destroy
 
   has_attached_file :image, styles: {
     thumb: '100x100>',
