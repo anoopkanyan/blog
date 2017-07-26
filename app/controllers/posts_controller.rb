@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 	end
 
 	def show
-		impressionist(@post) 
+		#impressionist(@post) 
 	end	
 
 	def edit

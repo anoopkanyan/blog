@@ -77,14 +77,17 @@
     			<%= link_to '#'.concat(tag.name), tag_path(tag) %> 
   			<% end %>
 		</p>
+		<!--
 		<%= "#{@post.impressionist_count} views" %>
+		-->
 		</div>
 		<hr>		
 		<div id="share_box">
 			<p>Share <%= @post.title %> </p>
 			<%= social_share_button_tag(@post.title) %>
-			<a href='http://trkur4.com/292520/32911?i=384786'><img src='http://pixxur.com/292520/384786-600x400.png' /></a>
+			
 			<!--
+			<a href='http://trkur4.com/292520/32911?i=384786'><img src='http://pixxur.com/292520/384786-600x400.png' /></a>
 			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
