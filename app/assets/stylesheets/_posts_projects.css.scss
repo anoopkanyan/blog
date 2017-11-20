@@ -45,8 +45,13 @@ $white: #FFFFFF;
 			margin: 0;		
 		}
 
-		
 	}
+
+	h1, h2, h3, h4, h5, h6 {
+			a{
+				text-decoration: none;	
+			} 		
+		}
 
 	hr{
 			margin: 3em auto; 	
@@ -57,6 +62,15 @@ $white: #FFFFFF;
 			display: block;
     		margin: auto;
 	} 
+
+	a{
+		color: $dark;
+		&:hover { 
+			color: $highlight;
+			cursor: pointer;
+		}
+
+	}
 
 		
 }
