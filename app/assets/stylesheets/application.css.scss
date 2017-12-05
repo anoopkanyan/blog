@@ -391,6 +391,14 @@ a {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+
+	#post_youtube {
+	height: 22em;
+	padding: 0;
+	padding-bottom: 5%;
+}
+	
+
 }
 
 @media screen and (max-width: 500px) {
@@ -399,6 +407,13 @@ a {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+
+
+	#post_youtube {
+	height: 18em;
+	padding: 0;
+	padding-bottom: 5%;
+}
 
 
 }
