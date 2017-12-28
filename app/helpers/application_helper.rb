@@ -16,6 +16,8 @@ module ApplicationHelper
 			lax_html_blocks: true,
 			strikethrough: true,
 			superscript: true,	
+			link_attributes: { target: '_blank' }
+
 		}
 
 		Redcarpet::Markdown.new(renderer, options).render(content).html_safe
