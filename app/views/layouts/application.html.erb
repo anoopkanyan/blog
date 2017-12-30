@@ -2,6 +2,8 @@
 <html>
 <head>
   <%= display_meta_tags site: 'ChewTab' %>
+  <%= auto_discovery_link_tag :rss, posts_url(:format => :rss) %>
+
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
   <script src="https://use.fontawesome.com/a3c0a16723.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
