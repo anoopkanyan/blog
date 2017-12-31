@@ -7,7 +7,7 @@
   					type:     		'article',
   					url:      		request.original_url,
   					image:    	    @post.image.url(:original),
-  					description: 	@post.content,
+  					description: 	@post.content.truncate(157),
   					site_name:      "Chewtab" 	
 				},
 				
