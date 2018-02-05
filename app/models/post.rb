@@ -10,7 +10,9 @@ class Post < ActiveRecord::Base
     thumb: '100x100>',
     square: '200x200#',
     main: '300x200>'
-  }
+  }, 
+  :s3_protocol => :https,
+
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
   def tag_list
