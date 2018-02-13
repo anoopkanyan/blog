@@ -1,7 +1,8 @@
 <% set_meta_tags title: @tag.name,
                  description: 'Posts tagged with'.concat(@tag.name),
                  keywords: 'viral, read, content, posts, tags, '.concat(@tag.name),
-                 reverse: true %>
+                 reverse: true,
+                 noindex: true %>
 
 <h1 id="page_title">Posts Tagged with <%= @tag.name %></h1>
 
