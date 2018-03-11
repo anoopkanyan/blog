@@ -1,7 +1,31 @@
 $white: #FFFFFF;
 
 
-#posts_wrapper {
+.LeftFloatAds {
+		max-width: 10%;
+		padding-top: 5rem;   
+		text-align: center;
+		img{
+			max-width: 100%;
+			display: block;
+    		margin: auto;
+    		padding: 1rem;
+	} 
+	}
+
+.RightFloatAds {
+	max-width: 10%;
+	padding-top: 5rem;
+	text-align: center;
+	img{
+			max-width: 100%;
+			display: block;
+    		margin: auto;
+    		padding: 1rem;
+	} 
+}	
+
+#posts_wrapper {	
 	padding: 3em 0;
 	.post {
 		text-align: center;
@@ -163,3 +187,21 @@ $white: #FFFFFF;
 	}
 
 }
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+	.LeftFloatAds {
+		display: none;
+	}
+
+	.RightFloatAds {
+		display: none;
+	}
+
+}
+
+

@@ -36,6 +36,15 @@ hr {
 	display: none;
 }
 
+
+.container {
+  display: flex;
+}
+.container > div {
+  flex: 1; /*grow*/
+}
+
+
 .wrapper {
 	width: 90%; 
 	margin: 0 auto;
@@ -399,7 +408,6 @@ a {
 	padding-bottom: 5%;
 }
 	
-
 }
 
 @media screen and (max-width: 500px) {
