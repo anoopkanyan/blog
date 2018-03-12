@@ -407,7 +407,15 @@ a {
 	padding: 0;
 	padding-bottom: 5%;
 }
+
+.container {
+  	display: inherit;
+	}
+	.container > div {
+  	flex: 1; /*grow*/
+	}
 	
+
 }
 
 @media screen and (max-width: 500px) {
@@ -431,6 +439,13 @@ a {
 	padding: 0;
 	padding-bottom: 5%;
     }
+
+    .container {
+  	display: inherit;
+	}
+	.container > div {
+  	flex: 1; /*grow*/
+	}
 
 
 }
