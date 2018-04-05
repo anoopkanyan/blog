@@ -28,7 +28,7 @@
   <hr>
   <% @posts.each do |post| %>
   <% if !(post.youtube_url.blank?) %>
-  <%= link_to (image_tag post.image.url(:main)), post %>
+  <p><%= raw(youtube_embed_main(post.youtube_url)) %></p>
   <h3><a href="#"><%= link_to post.title, post %></a></h3>
   <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>  
   <% end %>
